@@ -11,6 +11,10 @@ app.get("/about", (req, res) => {
     res.send("<h1>About Page</h1>");
 })
 
+app.get("/register", (req, res) => {
+    res.sendStatus(201)
+})
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}.`);
 });
